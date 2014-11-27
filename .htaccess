@@ -1,0 +1,2 @@
+Header set X-UA-Compatible "IE=edge"
+AddType text/cache-manifest appcache

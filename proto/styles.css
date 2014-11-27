@@ -1,0 +1,39 @@
+body {
+	min-height: 3250px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #edeee8;
+	background-position: top center;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	color: #333;
+}
+body.index {
+	background-image: none;
+}
+body.one{
+	background-image: url(b1.jpg);
+}
+body.two{
+	background-image: url(b2.jpg);
+}
+body.three {
+	background-image: url(b3.jpg);
+}
+
+a, a:visited {
+	color: #55F;
+}
+h1 {
+	font-weight: 100;
+	width: 360px;
+	margin: 2em auto 1em auto;
+}
+ul {
+	width: 360px;
+	margin: 1em auto;
+}
+li {
+	margin-bottom: .5em;
+}

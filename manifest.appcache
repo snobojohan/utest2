@@ -1,0 +1,21 @@
+CACHE MANIFEST
+# 2014-11-27:v13
+
+# Explicitly cached 'master entries'.
+CACHE:
+svt-flow-logo.png
+svt-logo.png
+svt-play-logo.png
+http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js
+http://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.0.3/es5-shim.min.js
+http://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.0.3/es5-sham.min.js
+http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js
+http://cdnjs.cloudflare.com/ajax/libs/react/0.12.0/react.js
+http://www.svt.se/cachable_image/1416926058000/onewish/article2497499.svt/ALTERNATES/extralarge/one-wish-affisch-1280-jpg
+http://www.svt.se/cachable_image/1415782600000/gift-vid-forsta-ogonkastet-/article2466718.svt/ALTERNATES/extralarge/gifta-tina-ep2-jpg
+http://www.svtplay.se/klipp/2497521?type=embed&external=true
+http://www.svtplay.se/klipp/2465295?type=embed&external=true
+
+# Resources that require the user to be online.
+NETWORK:
+*
