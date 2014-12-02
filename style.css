@@ -978,7 +978,7 @@ strong.t-show, .t_b {
 
 .svtse_teaser__link:hover h1 {
   text-decoration: underline; }
-.svtse_teaser__link:hover .svtse_teaser__text-program {
+.svtse_teaser__link:hover .svtse_teaser__text--v2 .svtse_teaser__text-program {
   background: #191919; }
 .svtse_teaser__link:hover img {
   opacity: .9; }
