@@ -270,7 +270,22 @@ strong.t-show, .t_b {
 	color: $color-brand;
 }
 
+.svtse_teaser__link {
+	&:hover {
+		h1 {
+			text-decoration: underline;
+		}
+		.svtse_teaser__text-program {
+			background: rgb(25,25,25);
+		}
+		img {
+			opacity: .9;
+		}
+	}
+}
+
 .svtse_hero__caption-block--v2 {
+
 	.svtse_teaser__link {
 		background: transparent;
 		padding: 0;
@@ -300,6 +315,7 @@ strong.t-show, .t_b {
 
 .svtse_teaser__text--v2 {
 	margin-top: -3em;
+	position: relative;
 	.svtse_teaser__text-bread {
 		display: none;
 	}

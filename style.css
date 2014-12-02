@@ -976,6 +976,13 @@ strong.t-show, .t_b {
 .svtse_teaser__text-program {
   color: #777; }
 
+.svtse_teaser__link:hover h1 {
+  text-decoration: underline; }
+.svtse_teaser__link:hover .svtse_teaser__text-program {
+  background: #191919; }
+.svtse_teaser__link:hover img {
+  opacity: .9; }
+
 .svtse_hero__caption-block--v2 .svtse_teaser__link {
   background: transparent;
   padding: 0; }
@@ -996,7 +1003,8 @@ strong.t-show, .t_b {
   display: none; }
 
 .svtse_teaser__text--v2 {
-  margin-top: -3em; }
+  margin-top: -3em;
+  position: relative; }
   .svtse_teaser__text--v2 .svtse_teaser__text-bread {
     display: none; }
   .svtse_teaser__text--v2 .svtse_teaser__text-program {
