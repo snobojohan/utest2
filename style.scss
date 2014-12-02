@@ -1,13 +1,14 @@
 $color-gray-darker : #333;
 $color-gray-dark : #555;
 $color-gray : #777;
-$color-gray-light : #eee;
+$color-gray-light : #edede8;
 $color-gray-lighter : #f2f2f2;
-
-$color-brand : #f21c58;
-$color-brand-alt : #00a77b;
-$color-btn : $color-brand-alt;
 $color-link : #3f72ff;
+$color-brand : $color-gray; // #f21c58;
+$color-brand-alt : #00a77b;
+$color-brand-alt-hover : #3f72ff;
+$color-btn : $color-brand-alt;
+
 
 $break-small: 37.5625em;
 $break-large: 64.0625em;
@@ -27,6 +28,10 @@ $break-large: 64.0625em;
 @import "main.bundle.css";
 @import "popup";
 @import "abtest";
+
+.svtse_menu__logotype {
+	background-image: url("svt_logo_black_2x.png");
+}
 
 
 .mfp-content {
@@ -134,6 +139,7 @@ html.pop-anim .mfp-content {
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////
 
+
 button.mfp-close {
 	background: linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%); /* W3C */
 	color: #FFF !important;
@@ -158,16 +164,20 @@ button.mfp-close {
 }
 
 /*** TEST ***/
+.svtse_teaser {
+	padding-bottom: 0;
+}
 .test-full-episode {
 	display: block;
-	border-top: 1px solid #b8b8b0;
-	margin: 0 1em;
-	padding: .5em 0;
+	border-top: 4px solid $color-gray-light;
+	margin: 0;
+	padding: 10px 1em 10px 1em;
 	text-decoration: none;
 	font-weight: bold;
-	color: #00a47b;
+	color: $color-brand-alt;
 	&:hover {
-		color: #0059b3;
+		color: #FFF;
+		background: $color-brand-alt-hover;
 	}
 	.svt_icon {
 		margin-right: .2em;
@@ -181,11 +191,28 @@ button.mfp-close {
 		}
 	}
 }
+.svtse_hero__caption-text-program {
+	color: $color-brand;
+}
+.svtse_hero__caption-space {
+	padding: 0;
+	background: transparent;
+	.svtse_teaser__link {
+		padding: .5em 1em 1em 1em;
+		display: block;
+		background: #FFF;
+	}
+}
 .test-full-episode-onhero {
-	margin: 1em 0 0 0;
+	// margin: 1em 0 0 0;
+	padding-bottom: 15px;
+	margin-top: 4px;
+	border-top: none;
+	background: #FFF;
 	&:hover {
+
 		.svt_icon--live {
-			color: #0059b3;
+			color: #FFF;
 		}
 	}
 	.svt_icon--live {
@@ -194,6 +221,20 @@ button.mfp-close {
 		margin-right: .2em;
 		position: relative;
 		top: 2px;
+	}
+}
+
+
+.test-full-episode-onhero--v2 {
+	padding: 8px 10px;
+	background: $color-brand-alt;
+	color: #FFF;
+	.svt_icon--live {
+		display: none;
+	}
+	&:hover {
+		// color: $color-brand-alt;
+		background: $color-brand-alt-hover;
 	}
 }
 .flist {
@@ -225,3 +266,54 @@ strong.t-show, .t_b {
 	display: inline;
 }
 
+.svtse_teaser__text-program {
+	color: $color-brand;
+}
+
+.svtse_hero__caption-block--v2 {
+	.svtse_teaser__link {
+		background: transparent;
+		padding: 0;
+	}
+	.svtse_hero__caption-text-program, .svtse_hero__caption-text-headline {
+		background: rgba(25,25,25,0.8);
+		color: #FFF;
+		font-family: Cambria, Georgia, serif;
+		font-size: 12px;
+		// letter-spacing: 1px;
+		display: inline-block;
+		padding: 5px 8px;
+		margin-bottom: 3px;
+		font-weight: 500;
+	}
+	.svtse_hero__caption-text-headline {
+		display: block;
+		font-size: 24px;
+		padding: 8px 8px;
+	}
+	.svtse_hero__caption-text-bread {
+		display: none;
+	}
+}
+
+
+
+.svtse_teaser__text--v2 {
+	margin-top: -3em;
+	.svtse_teaser__text-bread {
+		display: none;
+	}
+	.svtse_teaser__text-program {
+		background: rgba(25,25,25,0.8);
+		color: #FFF;
+		font-family: Cambria, Georgia, serif;
+		font-size: 12px;
+		// letter-spacing: 1px;
+		display: inline-block;
+		padding: 5px 8px;
+		margin-bottom: 1em;
+	}
+	.svtse_teaser__text-headline {
+		margin: .2em 0;
+	}
+}
