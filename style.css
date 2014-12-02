@@ -782,7 +782,7 @@ a.abtest-affordance {
   background-image: url("svt_logo_black_2x.png"); }
 
 .mfp-content {
-  width: 80%;
+  width: 100%;
   max-width: 650px;
   margin: 1em auto 3em auto;
   /*
@@ -804,9 +804,11 @@ html.pop-anim .mfp-content {
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 1042; }
+  z-index: 1042;
+  padding-left: 6px;
+  padding-right: 6px; }
   #pop-mock div {
-    width: 80%;
+    width: 100%;
     max-width: 650px;
     margin: 1em auto 3em auto;
     background: #FFF;
@@ -814,9 +816,10 @@ html.pop-anim .mfp-content {
     min-height: 100%;
     position: relative;
     top: 110%;
-    -webkit-transition: top 0.2s ease-out;
-    -moz-transition: top 0.2s ease-out;
-    transition: top 0.2s ease-out; }
+    -webkit-transition: all 300ms cubic-bezier(0, 0.99, 0.355, 1);
+    -moz-transition: all 300ms cubic-bezier(0, 0.99, 0.355, 1);
+    -o-transition: all 300ms cubic-bezier(0, 0.99, 0.355, 1);
+    transition: all 300ms cubic-bezier(0, 0.99, 0.355, 1); }
 
 .pop-mock #pop-mock {
   display: block; }
@@ -845,7 +848,7 @@ html.pop-anim .mfp-content {
 
 /* overlay animate in */
 .mfp-fade.mfp-bg.mfp-ready {
-  opacity: 0.85; }
+  opacity: 0.8; }
 
 /* overlay animate out */
 .mfp-fade.mfp-bg.mfp-removing {
@@ -982,12 +985,14 @@ strong.t-show, .t_b {
   background: #191919; }
 .svtse_teaser__link:hover img {
   opacity: .9; }
+.svtse_teaser__link:hover .svtse_hero__img img {
+  opacity: 1; }
 
 .svtse_hero__caption-block--v2 .svtse_teaser__link {
   background: transparent;
   padding: 0; }
 .svtse_hero__caption-block--v2 .svtse_hero__caption-text-program, .svtse_hero__caption-block--v2 .svtse_hero__caption-text-headline {
-  background: rgba(25, 25, 25, 0.8);
+  background: rgba(25, 25, 25, 0.7);
   color: #FFF;
   font-family: Cambria, Georgia, serif;
   font-size: 12px;
@@ -1008,7 +1013,7 @@ strong.t-show, .t_b {
   .svtse_teaser__text--v2 .svtse_teaser__text-bread {
     display: none; }
   .svtse_teaser__text--v2 .svtse_teaser__text-program {
-    background: rgba(25, 25, 25, 0.8);
+    background: rgba(25, 25, 25, 0.7);
     color: #FFF;
     font-family: Cambria, Georgia, serif;
     font-size: 12px;
@@ -1017,5 +1022,33 @@ strong.t-show, .t_b {
     margin-bottom: 1em; }
   .svtse_teaser__text--v2 .svtse_teaser__text-headline {
     margin: .2em 0; }
+
+.svtse_hero__caption-space--v2 {
+  position: relative; }
+  .svtse_hero__caption-space--v2 .svtse_hero__caption-text-program {
+    position: absolute;
+    top: -3.2em;
+    background: rgba(25, 25, 25, 0.7);
+    color: #FFF;
+    font-family: Cambria, Georgia, serif;
+    font-size: 12px;
+    display: inline-block;
+    padding: 5px 8px; }
+
+.js--hover-2 .svtse_hero__caption-text-headline {
+  text-decoration: underline; }
+.js--hover-2 img {
+  opacity: .9; }
+
+.svtse_hero-small--v2 .js--hover-2 .svtse_hero__caption-text-program {
+  background: #191919; }
+
+.js--hover .svtse_hero__caption-text-headline {
+  text-decoration: underline; }
+.js--hover .svtse_hero__caption-text-program, .js--hover .svtse_hero__caption-text-headline {
+  background: #191919; }
+
+a.hoverable:hover .svtse_hero__caption-text-program, a.hoverable:hover .svtse_hero__caption-text-headline {
+  background: #191919; }
 
 /*# sourceMappingURL=style.css.map */

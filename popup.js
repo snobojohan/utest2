@@ -66,4 +66,24 @@ $(document).ready(function() {
 		type: 'ajax'
 	});
 
+	// var $hoverable = $( '.svtse_hero-medium a.hoverable' );
+
+	$( '.svtse_hero__img' ).hover(
+		function() {
+			$( '.svtse_hero-medium a' ).addClass( "js--hover" );
+		}, function() {
+			$( '.svtse_hero-medium a' ).removeClass( "js--hover" );
+		}
+	);
+
+	$( '.svtse_hero-small .svtse_teaser__link').hover(
+		function() {
+
+			$( '.svtse_hero-small a' ).addClass( "js--hover-2" );
+		}, function() {
+			$( '.svtse_hero-small a' ).removeClass( "js--hover-2" );
+		}
+	);
+
+
 });
