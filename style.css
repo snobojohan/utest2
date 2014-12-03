@@ -1043,10 +1043,11 @@ strong.t-show, .t_b {
 .svtse_hero-small--v2 .js--hover-2 .svtse_hero__caption-text-program {
   background: #191919; }
 
+.v2 .svtse_hero__caption-text-program, .v2 .svtse_hero__caption-text-headline {
+  background: #191919; }
+
 .js--hover .svtse_hero__caption-text-headline {
   text-decoration: underline; }
-.js--hover .svtse_hero__caption-text-program, .js--hover .svtse_hero__caption-text-headline {
-  background: #191919; }
 
 a.hoverable:hover .svtse_hero__caption-text-program, a.hoverable:hover .svtse_hero__caption-text-headline {
   background: #191919; }

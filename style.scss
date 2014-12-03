@@ -258,6 +258,10 @@ button.mfp-close {
 	display: -ms-flexbox;
 	display: flex;
 }
+
+
+
+
 .flist__item-full {
 	width: 100%;
 }
@@ -380,14 +384,18 @@ strong.t-show, .t_b {
 	}
 }
 
-	.js--hover {
-		.svtse_hero__caption-text-headline {
-			text-decoration: underline;
-		}
+.v2 {
+
 		.svtse_hero__caption-text-program, .svtse_hero__caption-text-headline {
-			background: rgb(25,25,25);
+			background: rgb(25, 25, 25);
 		}
+
+}
+.js--hover {
+	.svtse_hero__caption-text-headline {
+		text-decoration: underline;
 	}
+}
 
 	a.hoverable:hover {
 		.svtse_hero__caption-text-program, .svtse_hero__caption-text-headline {

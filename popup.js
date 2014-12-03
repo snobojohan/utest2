@@ -78,7 +78,6 @@ $(document).ready(function() {
 
 	$( '.svtse_hero-small .svtse_teaser__link').hover(
 		function() {
-
 			$( '.svtse_hero-small a' ).addClass( "js--hover-2" );
 		}, function() {
 			$( '.svtse_hero-small a' ).removeClass( "js--hover-2" );
